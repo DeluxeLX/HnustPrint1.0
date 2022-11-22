@@ -1,0 +1,2 @@
+<!--pages/a-hnustPrint/uploadLocal/uploadLocal.wxml-->
+<web-view src="{{src}}"></web-view>

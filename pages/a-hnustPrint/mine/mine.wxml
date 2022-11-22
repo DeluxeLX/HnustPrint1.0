@@ -1,0 +1,39 @@
+<!--pages/a-hnustPrint/mine/mine.wxml-->
+<view class="big-container">
+  <view class="background">
+    <image src="/icon/index/mineBlackgroud.jpg"></image>
+  </view>
+
+  <view class="row" bindtap="login" wx:if="{{user.portrait==null}}">
+    <view class="avatar-example">
+      <t-avatar icon="user" size="large"/>
+      <text class="avatar-description">未登录</text>
+    </view>
+  </view>
+  
+  <view class="row" wx:else>
+    <view class="avatar-example">
+      <t-avatar image="{{user.portrait}}" size="large" alt="avatar"/>
+      <text class="avatar-description">{{user.nickname}}</text>
+    </view>
+  </view>
+  
+  <view class="demo-section_wrapper">
+    <t-cell title="我的订单" hover arrow bindtap="myOrders">
+      <t-icon name="root-list" slot="left-icon" />
+    </t-cell>
+    <t-cell title="我的地址" hover arrow bindtap="myAddress">
+      <t-icon name="location" slot="left-icon" />
+    </t-cell>
+    <t-cell title="价格列表" hover arrow bindtap="priceList">
+      <t-icon name="money-circle" slot="left-icon" />
+    </t-cell>
+    <!-- <t-cell title="常见问题" hover arrow bindtap="problem">
+      <t-icon name="help-circle" slot="left-icon" />
+    </t-cell>
+    <t-cell title="关于服务" hover arrow bindtap="service">
+      <t-icon name="lock-on" slot="left-icon" />
+    </t-cell> -->
+  </view>
+</view>
+

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-avatar-group": "tdesign-miniprogram/avatar/avatar-group",
+    "t-cell": "tdesign-miniprogram/cell/cell",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom"
+}

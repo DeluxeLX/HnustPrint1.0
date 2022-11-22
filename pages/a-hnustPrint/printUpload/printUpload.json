@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-button-group": "tdesign-miniprogram/button-group/button-group",
+    "t-popup": "tdesign-miniprogram/popup/popup",
+    "t-message": "tdesign-miniprogram/toast/toast",
+    "t-dialog": "tdesign-miniprogram/dialog/dialog",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "navigationBarTitleText": "文件列表"
+}

@@ -1,0 +1,27 @@
+/* pages/a-hnustPrint/home/home.wxss */
+
+.big-container .external-class {
+  border-radius: 30rpx;
+  margin-left: 77rpx;
+  font-size: larger;
+  font-weight: bolder;
+  height: 150rpx;
+  position: fixed;
+  bottom: 100rpx;
+  z-index: 10;
+  letter-spacing: 5rpx;
+}
+
+.big-container .notes {
+  position: fixed;
+  bottom: 60rpx;
+  left: 160rpx;
+  z-index: 10;
+  font-size: 24rpx;
+  color: #bfbfbf;
+}
+
+.big-container .steps {
+  margin-top: 700rpx;
+}
+

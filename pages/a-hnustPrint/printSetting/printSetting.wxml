@@ -1,0 +1,93 @@
+<!--pages/a-hnustPrint/printSetting/printSetting.wxml-->
+<view class="big-container">
+  <view class="title-container">
+    <view class="img" style="margin-right: 30rpx;">
+      <image src="{{itemUrl}}"></image>
+    </view>
+    <view class="title">
+      <text>{{printSetting.filename}}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="paperStyle">
+    <view class="property">
+      <text>纸型</text>
+    </view>
+    <view class="selector">
+      <view class="selectOne" id="A4" bindtap="handlePaper1"
+        style="background-color: {{paperStyleBool ? '#ffffff' : '#6fa7db'}};">
+        <text style="color: {{paperStyleBool ? '#000000' : '#ffffff'}};">A4</text>
+      </view>
+      <view class="selectTwo" id="A3" bindtap="handlePaper2"
+        style="background-color: {{paperStyleBool ? '#6fa7db' : '#ffffff'}};">
+        <text style="color: {{paperStyleBool ? '#ffffff' : '#000000'}};">A3</text>
+      </view>
+    </view>
+  </view> 
+
+  <view class="line"></view>
+
+  <view class="paperStyle">
+    <view class="property">
+      <text>单双</text>
+    </view>
+    <view class="selector">
+      <view class="selectOne" id="单面" bindtap="handleSingle1"
+        style="background-color: {{singleOrDoubleBool ? '#ffffff' : '#6fa7db'}};">
+        <text style="color: {{singleOrDoubleBool ? '#000000' : '#ffffff'}};">单面</text>
+      </view>
+      <view class="selectTwo" id="双面" bindtap="handleSingle2"
+        style="background-color: {{singleOrDoubleBool ? '#6fa7db' : '#ffffff'}};">
+        <text style="color: {{singleOrDoubleBool ? '#ffffff' : '#000000'}};">双面</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="paperStyle">
+    <view class="property">
+      <text>颜色</text>
+    </view>
+    <view class="selector">
+      <view class="selectOne" id="黑白" bindtap="handleColor1"
+        style="background-color: {{colorBool ? '#ffffff' : '#6fa7db'}};">
+        <text style="color: {{colorBool ? '#000000' : '#ffffff'}};">黑白</text>
+      </view>
+      <view class="selectTwo" id="彩色" bindtap="handleColor2"
+        style="background-color: {{colorBool ? '#6fa7db' : '#ffffff'}};">
+        <text style="color: {{colorBool ? '#ffffff' : '#000000'}};">彩色</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="paperStyle">
+    <view class="property">
+      <text>份数</text>
+    </view>
+    <view class="selector">
+      <t-stepper value="{{value}}" bind:change="handleChange" theme="grey" inputWidth="{{72}}" min="1"/>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="bottom-bar">
+    <view class="left-container">
+      <view class="total">
+        <text>价格：</text>
+      </view>
+      <view class="amount">
+        <text>￥ {{amountAll}}</text>
+      </view>
+    </view> 
+    <view class="right-container">
+      <t-button t-class="external-class" theme="primary" content="确定" disabled="{{disabled}}" bind:tap="submitSetting">
+      </t-button>
+    </view>
+  </view>
+</view>

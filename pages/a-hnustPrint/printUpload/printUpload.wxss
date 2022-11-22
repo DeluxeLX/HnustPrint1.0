@@ -1,0 +1,213 @@
+/* pages/a-hnustPrint/printUpload/printUpload.wxss */
+page {
+  background-color: whitesmoke;
+}
+
+.big-container {
+  margin: 175rpx 125rpx 0rpx 125rpx;
+}
+
+.big-container .img image {
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.big-container .bottom-bar .left-container .amount{
+  color: #6fa7db;
+  font-weight: bolder;
+}
+
+.big-container .bottom-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 180rpx;
+  z-index: 10;
+}
+
+.big-container .bottom-bar .left-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0rpx 180rpx 0rpx 50rpx;
+  width: 300rpx;
+}
+
+.upload .btn-container {
+  position: fixed;
+  bottom: 250rpx;
+  right: 50rpx;
+  z-index: 10;
+}
+
+.upload .btn-container image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 6rpx 10rpx #a5a5a5;
+}
+
+/* 蓝色圆圈样式 */
+.t-button.t-is-block {
+  display: block;
+  width: 125rpx !important;
+  height: 125rpx;
+  border-radius: 150rpx;
+  font-size: 75rpx !important;
+  color: #fff !important;
+  background-color: #6fa7db;
+  box-shadow: 0rpx 6rpx 10rpx #a5a5a5;
+  position: fixed;
+  bottom: 250rpx;
+  right: 50rpx;
+}
+
+/* 弹出页面框里面的样式 */
+.tdesign-demo-popup .block {
+  width: 176rpx;
+  height: 176rpx;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tdesign-demo-popup .block--bottom {
+  width: 100vw;
+  height: 35vh;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tdesign-demo-popup .block--bottom image {
+  width: 160rpx;
+  height: 160rpx;
+  box-shadow: 0rpx 5rpx .8 #bfbfbf;
+}
+
+.big-container .tdesign-demo-popup .block--bottom .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 打印列表 */
+.big-container .printList {
+  position: fixed;
+  top: 30rpx;
+  left: 30rpx;
+  z-index: 5;
+}
+
+.big-container .printList .item {
+  width: 690rpx;
+  height: 280rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+  border-radius: 40rpx;
+  padding-top: 6rpx;
+  box-shadow: 0rpx 6rpx 10rpx #a5a5a56b;
+}
+
+.big-container .printList .type-img {
+  margin: 30rpx 30rpx 10rpx 30rpx;
+}
+
+.big-container .printList .type-img image {
+  width: 85rpx;
+  height: 85rpx;
+}
+
+.big-container .printList .top-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.big-container .printList .index {
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  font-size: smaller;
+  color: #bfbfbf;
+}
+
+.big-container .printList .title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  width: 440rpx;
+}
+
+.big-container .printList .title .filename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 360rpx;
+}
+
+.big-container .printList .title .parameter {
+  font-size: 24rpx;
+  color: #bfbfbf;
+}
+
+.big-container .printList .delete {
+  margin: 30rpx;
+}
+
+.big-container .printList .delete image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.big-container .printList .middle {
+  display: flex;
+  flex-direction: row;
+  margin-left: 90rpx;
+}
+
+.big-container .printList .middle .pages {
+  width: 300rpx;
+}
+
+.big-container .printList .line {
+  width: 100%;
+  border: 1rpx solid #bfbfbf4f;
+  margin-top: 20rpx;
+}
+
+.big-container .printList .bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+  margin-left: 340rpx;
+}
+
+.big-container .printList .preview {
+  width: 140rpx;
+  height: 50rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+  font-size: 24rpx;
+}
+
+.big-container .printList .setting {
+  width: 140rpx;
+  height: 50rpx;
+  border: 1rpx solid #6fa7db;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6fa7db;
+  font-size: 24rpx;
+}

@@ -1,0 +1,67 @@
+/* pages/a-hnustPrint/orderDetail/orderDetail.wxss */
+.big-container .printList {
+  position: fixed;
+  top: 30rpx;
+  left: 30rpx;
+  z-index: 5;
+}
+
+.big-container .printList .item {
+  width: 690rpx;
+  height: 180rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+  border-radius: 40rpx;
+  padding-top: 6rpx;
+  box-shadow: 0rpx 6rpx 10rpx #a5a5a56b;
+}
+
+.big-container .printList .type-img {
+  margin: 30rpx 30rpx 10rpx 30rpx;
+}
+
+.big-container .printList .type-img image {
+  width: 85rpx;
+  height: 85rpx;
+}
+
+.big-container .printList .top-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.big-container .printList .index {
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  font-size: smaller;
+  color: #bfbfbf;
+}
+
+.big-container .printList .title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  width: 480rpx;
+}
+
+.big-container .printList .title .filename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 360rpx;
+}
+
+.big-container .printList .title .parameter {
+  font-size: 24rpx;
+  color: #bfbfbf;
+  margin-top: -20rpx;
+}
+
+.big-container .printList .title .amount {
+  font-size: 24rpx;
+  color: #bfbfbf;
+  margin-top: 10rpx;
+}
+
+
+

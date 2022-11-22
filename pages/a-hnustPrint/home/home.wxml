@@ -1,0 +1,18 @@
+<!-- pages/a-hnustPrint/home/home.wxml -->
+<view class="big-container">
+  <view class="steps">
+    <t-steps class="demo-steps" defaultCurrent="0">
+      <t-step-item title="上传文件" content="支持微信、本地上传" />
+      <t-step-item title="设置&支付" content="细心设置参数，微信支付" />
+      <t-step-item title="商家打印" content="支付成功后开始打印" />
+    </t-steps>
+  </view>
+
+  <t-button t-class="external-class" theme="primary" block disabled="{{disabled}}"          bindtap="toPrintUpload">
+    立即打印
+  </t-button>
+  <view class="notes">
+    支持PDF、Word、JPG、PNG格式文件
+  </view>
+</view>
+

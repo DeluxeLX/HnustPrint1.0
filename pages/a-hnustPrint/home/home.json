@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-button-group": "tdesign-miniprogram/button-group/button-group",
+    "t-steps": "tdesign-miniprogram/steps/steps",
+    "t-step-item": "tdesign-miniprogram/steps/step-item"
+  }
+}

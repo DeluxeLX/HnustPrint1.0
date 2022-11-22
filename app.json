@@ -1,0 +1,114 @@
+{
+  "pages": [
+    
+    
+    "pages/a-hnustPrint/home/home",
+    "pages/a-hnustPrint/orders/orders",
+    "pages/a-hnustPrint/orderDetail/orderDetail",
+    "pages/a-hnustPrint/pay/pay",
+    "pages/a-hnustPrint/printUpload/printUpload",
+    "pages/a-hnustPrint/printSetting/printSetting",
+    "pages/a-hnustPrint/uploadLocal/uploadLocal",
+    "pages/a-hnustPrint/mine/mine"
+    
+  ],
+  "usingComponents": {
+    "t-demo": "../../components/demo-block/index",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-avatar-group": "tdesign-miniprogram/avatar/avatar-group",
+    "t-badge": "tdesign-miniprogram/badge/badge",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-cell": "tdesign-miniprogram/cell/cell",
+    "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+    "t-collapse": "tdesign-miniprogram/collapse/collapse",
+    "t-collapse-panel": "tdesign-miniprogram/collapse/collapse-panel",
+    "t-dialog": "tdesign-miniprogram/dialog/dialog",
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tabs/tab-panel",
+    "t-loading": "tdesign-miniprogram/loading/loading",
+    "t-button-group": "tdesign-miniprogram/button-group/button-group",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-rate": "tdesign-miniprogram/rate/rate",
+    "t-picker": "tdesign-miniprogram/picker/picker",
+    "t-picker-column": "tdesign-miniprogram/picker/picker-column",
+    "t-progress": "tdesign-miniprogram/progress/progress",
+    "t-input": "tdesign-miniprogram/input/input",
+    "t-textarea": "tdesign-miniprogram/textarea/textarea",
+    "t-message": "tdesign-miniprogram/message/message",
+    "t-toast": "tdesign-miniprogram/toast/toast",
+    "t-segmented-control": "tdesign-miniprogram/segmented-control/segmented-control",
+    "t-stepper": "tdesign-miniprogram/stepper/stepper",
+    "t-slider": "tdesign-miniprogram/slider/slider",
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "t-radio": "tdesign-miniprogram/radio/radio",
+    "t-radio-group": "tdesign-miniprogram/radio-group/radio-group",
+    "t-check-tag": "tdesign-miniprogram/tag/check-tag",
+    "t-checkbox": "tdesign-miniprogram/checkbox/checkbox",
+    "t-checkbox-group": "tdesign-miniprogram/checkbox-group/checkbox-group",
+    "t-swipe-cell": "tdesign-miniprogram/swipe-cell/swipe-cell",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-swiper-item": "tdesign-miniprogram/swiper/swiper-item",
+    "t-swiper-nav": "tdesign-miniprogram/swiper/swiper-nav",
+    "t-switch": "tdesign-miniprogram/switch/switch",
+    "t-sticky": "tdesign-miniprogram/sticky/sticky",
+    "t-fab": "tdesign-miniprogram/fab/fab",
+    "t-tab-bar": "tdesign-miniprogram/tab-bar/tab-bar",
+    "t-tab-bar-item": "tdesign-miniprogram/tab-bar/tab-bar-item",
+    "t-transition": "tdesign-miniprogram/transition/transition",
+    "t-popup": "tdesign-miniprogram/popup/popup",
+    "t-indexes": "tdesign-miniprogram/indexes/indexes",
+    "t-steps": "tdesign-miniprogram/steps/steps",
+    "t-step-item": "tdesign-miniprogram/steps/step-item",
+    "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
+    "t-dropdown-item": "tdesign-miniprogram/dropdown-menu/dropdown-item",
+    "t-drawer": "tdesign-miniprogram/drawer/drawer",
+    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+    "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
+    "t-footer": "tdesign-miniprogram/footer/footer",
+    "t-divider": "tdesign-miniprogram/divider/divider",
+    "t-empty": "tdesign-miniprogram/empty/empty",
+    "t-back-top": "tdesign-miniprogram/back-top/back-top",
+    "t-grid-item": "tdesign-miniprogram/grid/grid-item",
+    "t-grid": "tdesign-miniprogram/grid/grid",
+    "t-upload": "tdesign-miniprogram/upload/upload",
+    "t-count-down": "tdesign-miniprogram/count-down/count-down",
+    "t-image": "tdesign-miniprogram/image/image",
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-navbar": "tdesign-miniprogram/navbar/navbar",
+    "t-date-time-picker": "tdesign-miniprogram/date-time-picker/date-time-picker",
+    "t-action-sheet": "tdesign-miniprogram/action-sheet/action-sheet",
+    "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff",
+    "navigationBarTitleText": "科大云印",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/a-hnustPrint/home/home",
+        "text": "首页",
+        "iconPath": "icon/index/首页.png",
+        "selectedIconPath": "icon/index/_首页.png"
+      },
+      {
+        "pagePath": "pages/a-hnustPrint/mine/mine",
+        "text": "我的",
+        "iconPath": "/icon/index/mine.png",
+        "selectedIconPath": "/icon/index/_mine.png"
+      }
+    ],
+    "selectedColor": "#699fd0",
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 1000000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  }
+}

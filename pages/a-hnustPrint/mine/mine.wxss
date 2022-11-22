@@ -1,0 +1,33 @@
+/* pages/a-hnustPrint/mine/mine.wxss */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar-example {
+  text-align: center;
+  font-size: 34rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 200rpx 0rpx 0rpx 100rpx;
+}
+
+t-avatar {
+  margin-right: 50rpx;
+}
+
+.big-container .background image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: -100rpx;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.big-container .demo-section_wrapper {
+  margin: 200rpx 0rpx 0rpx 15rpx;
+}

@@ -1,0 +1,48 @@
+/* pages/a-hnustPrint/pay/pay.wxss */
+page {
+  background-color: whitesmoke;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-container .amountAll {
+  margin-top: 150rpx;
+  font-size: 72rpx;
+  color: rgb(255, 52, 52);
+}
+
+.address {
+  background-color: white;
+  width: 650rpx;
+  height: 200rpx;
+  border-radius: 35rpx;
+  margin-top: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blank {
+  color: #6fa7db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paybtn {
+  width: 650rpx;
+  height: 100rpx;
+  background-color: #6fa7db;
+  position: fixed;
+  bottom: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 40rpx;
+}

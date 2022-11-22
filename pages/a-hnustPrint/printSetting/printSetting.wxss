@@ -1,0 +1,99 @@
+/* pages/a-hnustPrint/printSetting/printSetting.wxss */
+page {
+  background-color: whitesmoke;
+}
+
+.big-container {
+  padding: 50rpx;
+  background-color: #ffffff;
+}
+
+.big-container .img image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.big-container .title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.big-container .line {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 1rpx;
+  background-color: #bfbfbf54;
+}
+
+.big-container .paperStyle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+}
+
+.big-container .property {
+  margin-top: 12rpx;
+}
+
+.big-container .selector {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300rpx;
+  font-size: 26rpx;
+}
+
+.big-container .selector .selectOne {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: #6fa7db;
+  border: 1rpx solid #bfbfbf;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rpx;
+  margin-right: 30rpx;
+}
+
+.big-container .selector .selectTwo {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid #bfbfbf;
+  /* background-color: #6fa7db; */
+  /* color: #ffffff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15rpx;
+}
+
+.big-container .bottom-bar .left-container .amount{
+  color: #6fa7db;
+  font-weight: bolder;
+}
+
+.big-container .bottom-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 180rpx;
+  z-index: 10;
+}
+
+.big-container .bottom-bar .left-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0rpx 180rpx 0rpx 50rpx;
+  width: 300rpx;
+}
+
+.t-button--base {
+  width: 160rpx !important;
+}

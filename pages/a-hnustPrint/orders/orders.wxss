@@ -1,0 +1,54 @@
+/* pages/a-hnustPrint/orders/orders.wxss */
+page {
+  background-color: whitesmoke;
+}
+
+.big-container .orders .item-order image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.big-container .orders .item-order {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 690rpx;
+  height: 240rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  border-radius: 30rpx;
+}
+
+.big-container .orders .item-order .top-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 0rpx 0rpx 30rpx;
+  align-items: center;
+}
+
+.big-container .orders .item-order .top-container .title {
+  margin-left: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 435rpx;
+}
+
+.big-container .orders .item-order .bottom-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 130rpx;
+  align-items: center;
+}
+
+.big-container .orders .item-order .bottom-container .left-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 23rpx;
+  color: #bfbfbf;
+  width: 430rpx;
+}
+
+.big-container .orders .item-order .bottom-container .left-container text {
+  margin-bottom: 6rpx;
+}

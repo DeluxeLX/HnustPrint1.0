@@ -1,0 +1,17 @@
+<!--pages/a-hnustPrint/pay/pay.wxml-->
+<view class="big-container">
+  <view class="amountAll">
+    <text style="color: rgb(255, 52, 52); font-size: large;">￥ </text>
+    <text>{{amountAll}}</text>
+  </view>
+
+  <view class="address">
+    <view class="blank">
+      <text>+ 添加收货地址</text>
+    </view>
+  </view>
+
+  <view class="paybtn" bindtap="wechatPay">
+    <text>去支付</text>
+  </view>
+</view>

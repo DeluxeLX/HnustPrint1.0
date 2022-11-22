@@ -1,0 +1,28 @@
+<!--pages/a-hnustPrint/orderDetail/orderDetail.wxml-->
+<view class="big-container">
+  <view class="printList">
+    <view class="item" wx:for="{{printList}}" wx:key="index">
+      <view class="top-container">
+        <view class="index">
+          <text>{{index + 1}}</text>
+        </view>
+        <view class="type-img">
+          <image src="{{item.typeImg}}"></image>
+        </view>
+        <view class="title">
+          <view class="filename">
+            <text>{{item.filename}}</text>
+          </view>
+          <view class="parameter">
+            <text>
+              A4/{{item.singleOrDouble}}/纵向/{{item.color}}/{{item.pages}}页/{{item.number}}份
+            </text>
+          </view>
+          <view class="amount">
+            <text>￥{{item.amount}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

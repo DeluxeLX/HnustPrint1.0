@@ -1,0 +1,29 @@
+<!--pages/a-hnustPrint/orders/orders.wxml-->
+<view class="big-container">
+  <view class="orders">
+    <view class="item-order" wx:for="{{orderList}}" wx:key="index">
+      <view class="top-container" bindtap="viewDetails" data-index="{{index}}">
+        <view class="image">
+          <image src="../../../icon/index/PDF.png"></image>
+        </view>
+        <view class="title">
+          <text>{{item.documentName}}</text>
+        </view>
+        <view class="status">
+          <text style="color: #bfbfbf; font-size: 23rpx;">支付成功</text>
+        </view>
+      </view>
+
+      <view class="bottom-container" bindtap="viewDetails" data-index="{{index}}">
+        <view class="left-container">
+          <text>共{{item.documentNum}}个文档</text>
+          <text>下单时间：{{item.createTime}}</text>
+          <text>订单编号：KD{{item.id}}</text>
+        </view>
+        <view class="right-container" style="font-size: 28rpx;">
+          <text>￥{{item.amount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

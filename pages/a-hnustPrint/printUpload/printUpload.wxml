@@ -1,0 +1,105 @@
+<!--pages/a-hnustPrint/printUpload/printUpload.wxml-->
+<view class="big-container">
+  <view class="img" wx:if="{{printList.length == 0}}">
+    <image src="/icon/index/emptyData.png"></image>
+  </view>
+  
+  <view class="printList" wx:else>
+    <view class="item" wx:for="{{printList}}" wx:key="index">
+      <view class="top-container">
+        <view class="index">
+          <text>{{index+1}}</text>
+        </view>
+        <view class="type-img">
+          <image src="{{item.typeImg}}"></image>
+        </view>
+        <view class="title">
+          <view class="filename">
+            <text>{{item.filename}}</text>
+          </view>
+          <view class="parameter">
+            <text>A4/{{item.singleOrDouble}}/纵向/{{item.color}}</text>
+          </view>
+        </view>
+        <view class="delete" bindtap="deleteFile" data-index="{{index}}" data-key="showConfirm">
+          <image src="../../../icon/index/delete.png"></image>
+        </view>
+      </view>
+
+      <view class="middle">
+        <view class="pages">
+          <text style="font-size: 24rpx;">打印页数：</text>
+          <text style="color: #6fa7db; font-size: large;">{{item.pages}}</text>
+        </view>
+        <view class="num">
+          <text style="font-size: 24rpx;">打印份数：</text>
+          <text style="color: #6fa7db; font-size: large;">{{item.number}}</text>
+        </view>
+      </view>
+
+      <!-- <view class="line"></view> -->
+
+      <view class="bottom">
+        <view class="preview" bindtap="preViewFile" data-index="{{index}}">
+          <text>预览</text>
+        </view>
+        <view class="setting" bindtap="printSetting" data-index="{{index}}">
+          <text>打印设置</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom-bar">
+    <view class="left-container">
+      <view class="total">
+        <text>总计：</text>
+      </view>
+      <view class="amount">
+        <text>￥ {{amountAll}}</text>
+      </view>
+    </view> 
+    <view class="right-container">
+      <t-button t-class="external-class" theme="primary" content="结算({{printList.length}})"       disabled="{{disabled}}" bindtap="pay">
+      </t-button>
+    </view>
+  </view>
+
+  <t-toast id="t-toast"/>
+
+  <!-- 弹出样式 -->
+  <view class="tdesign-demo-popup">
+    <t-demo operList="{{operList}}" bindclickoper="clickHandle">
+      <t-popup
+        visible="{{bottom}}"
+        bind:visible-change="onVisibleChange"
+        placement="bottom"
+        close-btn
+      >
+        <view class="block block--bottom">
+          <view class="icon-container" bindtap="getFile">
+            <view class="iconImg">
+              <image src="../../../icon/index/wechatUpload.png"></image>
+            </view>
+            <view class="iconName">
+              <text>微信上传</text>
+            </view>
+          </view>
+          
+          <view class="icon-container" bindtap="localUpload">
+            <view class="iconImg">
+              <image src="../../../icon/index/localUpload.png"
+                style="width: 140rpx; height: 140rpx;">
+              </image>
+            </view>
+            <view class="iconName" style="margin-top: 20rpx;">
+              <text>本地上传</text>
+            </view>
+          </view>
+
+        </view>
+      </t-popup>
+    </t-demo>
+  </view>
+
+</view>
